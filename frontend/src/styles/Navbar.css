@@ -1,0 +1,92 @@
+.navbar {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(255, 255, 255, 0.08);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.75rem 2rem;
+box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 🌟 Logo or Brand Name */
+.nav-logo {
+font-weight: bold;
+font-size: 1.5rem;
+color: #ffffff;
+text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+text-decoration: none;
+}
+
+/* 🔗 Navigation Links Container */
+.nav-right {
+display: flex;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+/* 🧩 Navigation Links */
+.nav-link {
+padding: 8px 16px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 500;
+font-size: 0.95rem;
+background: rgba(255, 255, 255, 0.15);
+color: #ffffff;
+transition: all 0.3s ease;
+box-shadow: 0 0 0 transparent;
+}
+
+.nav-link:hover {
+background: #6a5acd;
+color: #fff;
+box-shadow: 0 0 10px #b9aaff;
+}
+
+/* 🧍 User Name */
+.nav-user {
+font-weight: 500;
+color: #ffffff;
+font-size: 0.95rem;
+margin-right: 6px;
+}
+
+/* 🔘 Logout Button */
+.nav-button {
+padding: 8px 16px;
+background: #ff4d6d;
+color: white;
+border: none;
+border-radius: 30px;
+font-size: 0.95rem;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+background: #ff0033;
+box-shadow: 0 0 12px #ff6b81;
+}
+
+/* 📱 Responsive Layout */
+@media screen and (max-width: 768px) {
+.navbar {
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+.nav-right {
+width: 100%;
+justify-content: flex-start;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+}
